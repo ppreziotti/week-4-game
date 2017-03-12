@@ -1,9 +1,9 @@
+// Global variables
 var userScore = 0;
 var wins = 0;
 var losses = 0;
-// Returns random number between 19 and 120
-var targetScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
 var images = ["/C:/Users/Patrick/Documents/Code/week-4-game/assets/images/crystal-1.jpg", "/C:/Users/Patrick/Documents/Code/week-4-game/assets/images/crystal-2.jpg", "/C:/Users/Patrick/Documents/Code/week-4-game/assets/images/crystal-3.jpg", "/C:/Users/Patrick/Documents/Code/week-4-game/assets/images/crystal-4.jpg"];
+var targetScore;
 
 // Displays the target score to match on the page
 $("#target-score").html("Score to Match: " + targetScore);
@@ -18,17 +18,16 @@ for (i = 0; i < images.length; i++) {
 	imageCrystal.attr("data-crystalvalue", Math.floor(Math.random() * (12 - 1 + 1)) + 1);
 	$(".crystals").append(imageCrystal);
 	console.log(images[i]);
-	
+
 }
 
 function newGame() {
 
-	// Determines new target score
+	// Determines target score (random number between 19 and 120, resets user score to 0, and
+	// assigns new random value to each crystal
 	targetScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
-	console.log(targetScore);
+	$("#target-score").html("Score to Match: " + targetScore);
 	userScore = 0;
-	// Assigns new random value to each crystal
-	imageCrystal.attr("data-crystalvalue", Math.floor(Math.random() * (12 - 1 + 1)) + 1);
 
 }
 
