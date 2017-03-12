@@ -3,24 +3,22 @@
 	margin-top: 0;
 	padding-top: 10px;
 	padding-bottom: 20px;
+	font-family: 'VT323', monospace;
+	text-align: center;
 }
 
 .panel-default {
 	margin-top: 20px;
+	margin-bottom: 40px;
 }
 
 body {
 	background-image: url("../images/eight_horns.png");
 }
 
-img {
+.image-crystal {
 	width: 200px;
 	height: 200px;
-}
-
-h1 {
-	font-size: 36px;
-	text-align: center;
 }
 
 h2 {
