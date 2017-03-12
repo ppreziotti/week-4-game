@@ -1,9 +1,13 @@
+body {
+	background-image: url("../images/eight_horns.png");
+	font-family: 'VT323', monospace;
+}
+
 .page-header {
 	background-color: #6D4EFF;
 	margin-top: 0;
 	padding-top: 10px;
 	padding-bottom: 20px;
-	font-family: 'VT323', monospace;
 	text-align: center;
 }
 
@@ -12,13 +16,13 @@
 	margin-bottom: 40px;
 }
 
-body {
-	background-image: url("../images/eight_horns.png");
+.image-crystal {
+	max-width: 25%;
+	max-height: 100%;
 }
 
-.image-crystal {
-	width: 200px;
-	height: 200px;
+.crystals {
+	position: relative;
 }
 
 h2 {
@@ -26,5 +30,5 @@ h2 {
 }
 
 p {
-	font-size: 18px;
+	font-size: 20px;
 }
