@@ -1,43 +1,32 @@
+.page-header {
+	background-color: #6D4EFF;
+	margin-top: 0;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.panel-default {
+	margin-top: 20px;
+}
+
 body {
-	margin-left: 10px;
-	margin-right: 10px;
+	background-image: url("../images/eight_horns.png");
 }
 
 img {
 	width: 200px;
 	height: 200px;
-	margin-right: 10px;
 }
 
 h1 {
 	font-size: 36px;
 	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
 h2 {
 	font-size: 24px;
 }
 
-h3 {
-	font-size: 18px;
-}
-
 p {
-	margin-bottom: 20px;
 	font-size: 18px;
 }
-
-#target-score {
-	margin-bottom: 20px;
-}
-
-#user-score {
-	margin-bottom: 20px;
-}
-
-#game-count {
-	margin-bottom: 20px;
-}
-

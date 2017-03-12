@@ -67,7 +67,7 @@ if (userScore === targetScore) {
 	newGame();
 }
 
-if (userScore > targetScore) {
+else if (userScore > targetScore) {
 	losses++;
 	$("#loss-count").html("Losses: " + losses);
 	alert("You did not match the score. Press OK to try again.");

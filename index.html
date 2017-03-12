@@ -3,36 +3,124 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Crystals Collector!</title>
-	<!-- Linking CSS Reset -->
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Linking Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Linking external CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-	<h1>Crystals Collector!</h1>
+	<div class="page-header">
 
-	<p>The goal of this game is to match the target score shown on the screen. Each crystal shown below holds a different point value. Click on a crystal to see the hidden point value added to your score. Match the score exactly and you win! If you go over the target score, you lose.</p>
+		<h1>Crystals Collector!</h1>
 
-	<p>A random target score will be generated each time you play. Good luck!</p>
-
-	<div id="target-score">
-		<h2>Score to Match: </h2>
 	</div>
 
-	<div id="user-score">
-		<h2>Your Score: </h2>
-	</div>
+	<div class="main-container">
 
-	<div id="game-count">
-		<h3 id="win-count">Wins: </h3>
-		<h3 id="loss-count">Losses: </h3>
-	</div>
+		<div class="row">
 
-	<img id="crystal-image-1" src="assets/images/crystal-1.jpg" alt="crystal-1">
-	<img id="crystal-image-2" src="assets/images/crystal-2.jpg" alt="crystal-2">
-	<img id="crystal-image-3" src="assets/images/crystal-3.jpg" alt="crystal-3">
-	<img id="crystal-image-4" src="assets/images/crystal-4.jpg" alt="crystal-4">
+			<div class="col-md-1">
+
+			</div>
+
+			<div class="col-md-10">
+
+				<p>The goal of this game is to match the target score shown on the screen. Each crystal shown below holds a different point value. Click on a crystal to see the hidden point value added to your score. Match the score exactly and you win! If you go over the target score, you lose.</p>
+
+				<p>A random target score will be generated each time you play. Good luck!</p>
+
+			</div>
+
+			<div class="col-md-1">
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-2">
+
+			</div>
+	
+			<div class="col-md-4">
+
+				<div class="panel panel-default">
+
+					<div class="panel-body">
+
+						<div>
+							<h2 id="target-score">Score to Match:</h2>
+							<h2 id="user-score">Your Score:</h2>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<div class="panel panel-default">
+
+					<div class="panel-body">
+
+						<div id="game-count">
+							<h2 id="win-count">Wins: </h2>
+							<h2 id="loss-count">Losses: </h2>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-md-2">
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-2">
+
+			</div>
+	
+			<div class="col-md-2">	
+
+				<img id="crystal-image-1" src="assets/images/crystal-1.jpg" alt="crystal-1">
+
+			</div>
+
+			<div class="col-md-2">
+
+				<img id="crystal-image-2" src="assets/images/crystal-2.jpg" alt="crystal-2">
+
+			</div>
+
+			<div class="col-md-2">
+
+				<img id="crystal-image-3" src="assets/images/crystal-3.jpg" alt="crystal-3">
+
+			</div>
+
+			<div class="col-md-2">
+
+				<img id="crystal-image-4" src="assets/images/crystal-4.jpg" alt="crystal-4">
+
+			</div>
+
+			<div class="col-md-2">
+
+			</div>
+
+		</div>
+
+	</div>
 
 	<!-- Linking jquery CDN -->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
@@ -40,4 +128,5 @@
 	<script src="assets/javascript/game.js"></script>
 
 </body>
+
 </html>
