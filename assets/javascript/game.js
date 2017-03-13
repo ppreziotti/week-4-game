@@ -2,14 +2,14 @@
 var userScore = 0;
 var wins = 0;
 var losses = 0;
-var images = ["/C:/Users/Patrick/Documents/Code/week-4-game/assets/images/crystal-1.jpg", "/C:/Users/Patrick/Documents/Code/week-4-game/assets/images/crystal-2.jpg", "/C:/Users/Patrick/Documents/Code/week-4-game/assets/images/crystal-3.jpg", "/C:/Users/Patrick/Documents/Code/week-4-game/assets/images/crystal-4.jpg"];
+var images = ["assets/images/crystal-1.jpg", "assets/images/crystal-2.jpg", "assets/images/crystal-3.jpg", "assets/images/crystal-4.jpg"];
 var targetScore;
 
 // Displays the target score to match on the page
 $("#target-score").html("Score to Match: " + targetScore);
 	
-// Creates images to be shown on the page and then assigns each image a source from the images
-// array, a value (random number 1-12) for adding the user score, and a place on the page
+// Creates images to be shown on the page and then assigns each image a source from the images array,
+// a value (random number between 1 and 12), and a place in the crystals div
 for (i = 0; i < images.length; i++) {
 
 	var imageCrystal = $("<img>");
@@ -28,6 +28,10 @@ function newGame() {
 	targetScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
 	$("#target-score").html("Score to Match: " + targetScore);
 	userScore = 0;
+	$("#user-score").html("Your Score: " + userScore);
+	$(".image-crystal").each(function() {
+		$(this).attr("data-crystalvalue", Math.floor(Math.random() * (12 - 1 + 1)) + 1);
+	});
 
 }
 
@@ -36,8 +40,8 @@ newGame();
 console.log(userScore);
 console.log(targetScore);
 
-// Creates an on-click event for each crystal image, the exclusive value for each image is added
-// to the user score upon click 
+// When a crystal image is clicked, the unique value for the image is added to the user score which
+// is then displayed on the page
 $(".image-crystal").on("click", function() {
 	var crystalValue = $(this).attr("data-crystalvalue");
 	crystalValue = parseInt(crystalValue);

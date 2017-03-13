@@ -17,8 +17,8 @@ body {
 }
 
 .image-crystal {
-	max-width: 25%;
-	max-height: 100%;
+	width: 25%;
+	height: auto;
 }
 
 .crystals {
