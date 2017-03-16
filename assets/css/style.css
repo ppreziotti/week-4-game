@@ -1,14 +1,22 @@
 body {
-	background-image: url("../images/eight_horns.png");
+	background-image: url("../images/green_dust_scratch.png");
 	font-family: 'VT323', monospace;
 }
 
-.page-header {
+h1 {
 	background-color: #6D4EFF;
-	margin-top: 0;
-	padding-top: 10px;
-	padding-bottom: 20px;
 	text-align: center;
+	padding: 15px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+p {
+	font-size: 20px;
 }
 
 .panel-default {
@@ -18,17 +26,4 @@ body {
 
 .image-crystal {
 	width: 25%;
-	height: auto;
-}
-
-.crystals {
-	position: relative;
-}
-
-h2 {
-	font-size: 24px;
-}
-
-p {
-	font-size: 20px;
 }
