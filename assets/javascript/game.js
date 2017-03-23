@@ -1,22 +1,20 @@
 // Global variables
 var targetScore;
-var userScore = 0;
+var userScore;
 var wins = 0;
 var losses = 0;
 var images = ["assets/images/crystal-1.jpg", "assets/images/crystal-2.jpg", 
 			  "assets/images/crystal-3.jpg", "assets/images/crystal-4.jpg"];
-
 
 // Creates images to be shown on the page and then assigns each image a source from the images array,
 // a value (random number between 1 and 12), and displays the image in the crystals div
 for (i = 0; i < images.length; i++) {
 
 	var imageCrystal = $("<img>");
-	imageCrystal.addClass("image-crystal");
+	imageCrystal.addClass("image-crystal img-circle");
 	imageCrystal.attr("src", images[i]);
 	imageCrystal.attr("data-crystalvalue", Math.floor(Math.random() * (12 - 1 + 1)) + 1);
 	$(".crystals").append(imageCrystal);
-	console.log(images[i]);
 
 }
 
